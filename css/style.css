@@ -1,0 +1,46 @@
+
+body {
+  background-color: #dadada;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.grid-contain {
+  display: grid;
+  font-size: 30px;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px repeat(3, 200px);
+  width: 420px;
+}
+
+nav {
+  background-color: rgba(0,0,0,.6);
+  color: #fff;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+
+nav h1{
+  margin: 15px;
+  text-align: center;
+
+}
+section {
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+}
+
+section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+footer {
+  background-color: #aaa;
+}
